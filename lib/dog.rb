@@ -30,6 +30,6 @@ end
 
 
 end #end of method
-  alias :save, :initialize
+  alias :save :initialize
 
 end # end class
