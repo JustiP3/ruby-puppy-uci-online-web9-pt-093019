@@ -30,7 +30,7 @@ end
 public
 
 def save(name)
- self = Dog.new(name)
+ Dog.new(name)
   end
 
 
