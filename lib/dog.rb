@@ -4,6 +4,8 @@ class Dog
 def initialize(name)
   @name = name
   @@all << self
+
+  alias :save, :initialize 
 end
 def name=(name)
   @name = name
@@ -25,7 +27,7 @@ def self.print_all
 @@all.each {|dog_instance| puts dog_instance.name}
 end
 
-alias :initialize :save 
+
 
 end #end of method
 
