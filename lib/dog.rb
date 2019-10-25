@@ -30,9 +30,8 @@ end
 public
 
 def save(name)
-  @name = name
-  @@all << self
-end
+ self = Dog.new(name)
+  end
 
 
 
