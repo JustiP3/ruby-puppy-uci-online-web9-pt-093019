@@ -5,7 +5,7 @@ def initialize(name)
   @name = name
   @@all << self
 
-  alias :save, :initialize 
+
 end
 def name=(name)
   @name = name
@@ -30,5 +30,6 @@ end
 
 
 end #end of method
+  alias :save, :initialize
 
 end # end class
