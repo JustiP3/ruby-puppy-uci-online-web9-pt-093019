@@ -26,7 +26,8 @@ def self.print_all
 end
 
 alias :save :initialize
+end #end of alias
 
-end
+end #end of method 
 
 end # end class
