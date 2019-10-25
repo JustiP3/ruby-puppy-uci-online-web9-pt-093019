@@ -5,7 +5,7 @@ def initialize(name)
   @name = name
   @@all << self
 
-  alias :save :initialize
+  alias :save :initialize # i guess initialize is a private method
 end
 def name=(name)
   @name = name
@@ -27,7 +27,10 @@ def self.print_all
 @@all.each {|dog_instance| puts dog_instance.name}
 end
 
-
+def save(name)
+  @name = name
+  @@all << self
+end 
 
 
 
