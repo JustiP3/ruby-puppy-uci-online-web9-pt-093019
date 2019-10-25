@@ -9,10 +9,7 @@ def initialize(name)
   @name = name
   @@all << self
 end
-def save(name)
-  instance = initialize(name)
- @@all << instance
-  end
+
 def name=(name)
   @name = name
   @@all << self
@@ -33,8 +30,9 @@ def self.print_all
 @@all.each {|dog_instance| puts dog_instance.name}
 end
 
-
-
+def save(input)
+  input = Dog.new 
+  end
 
 
 end # end class
