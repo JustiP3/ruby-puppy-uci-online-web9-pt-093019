@@ -9,7 +9,7 @@ def initialize(name)
   @name = name
   @@all << self
 end
-def save |name|
+def save(name)
  Dog.new(name)
   end
 def name=(name)
