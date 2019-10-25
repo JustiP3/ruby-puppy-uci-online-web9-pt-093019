@@ -1,9 +1,9 @@
 
 class Dog
 @@all =[]
-public
 
-def save(name)
+
+def self.save(name)
  Dog.new(name)
   end
 
