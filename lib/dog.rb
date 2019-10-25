@@ -1,6 +1,12 @@
 
 class Dog
 @@all =[]
+public
+
+def save(name)
+ Dog.new(name)
+  end
+
 def initialize(name)
   @name = name
   @@all << self
@@ -27,11 +33,6 @@ def self.print_all
 @@all.each {|dog_instance| puts dog_instance.name}
 end
 
-public
-
-def save(name)
- Dog.new(name)
-  end
 
 
 
