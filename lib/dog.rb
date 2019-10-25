@@ -25,9 +25,8 @@ def self.print_all
 @@all.each {|dog_instance| puts dog_instance.name}
 end
 
-alias :save :initialize
-end #end of alias
+alias :save(name) :initialize(name)
 
-end #end of method 
+end #end of method
 
 end # end class
