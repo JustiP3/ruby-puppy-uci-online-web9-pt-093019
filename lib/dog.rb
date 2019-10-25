@@ -27,10 +27,12 @@ def self.print_all
 @@all.each {|dog_instance| puts dog_instance.name}
 end
 
+public
+
 def save(name)
   @name = name
   @@all << self
-end 
+end
 
 
 
