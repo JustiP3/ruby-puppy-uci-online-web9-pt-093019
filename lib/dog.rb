@@ -10,7 +10,8 @@ def initialize(name)
   @@all << self
 end
 def save(name)
- name = Dog.new 
+ name = Dog.new
+ @@all << name 
   end
 def name=(name)
   @name = name
