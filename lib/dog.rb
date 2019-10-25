@@ -3,16 +3,15 @@ class Dog
 @@all =[]
 
 
-def self.save(name)
- Dog.new(name)
-  end
+
 
 def initialize(name)
   @name = name
   @@all << self
-
-  alias :save :initialize # i guess initialize is a private method
 end
+def save(name)
+ Dog.new(name)
+  end
 def name=(name)
   @name = name
   @@all << self
