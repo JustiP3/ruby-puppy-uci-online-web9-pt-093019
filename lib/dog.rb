@@ -19,7 +19,11 @@ end
 
 def self.clear_all
 @@all.delete_if {|x| true}
-end 
+end
+
+def self.print_all
+@@all.each {|dog_instance| puts dog_instance.name}
+end
 
 
 end # end class
